@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+    "name": "Feature Server Detector",
+    "version": "1.0",
+    "description": "Detects FeatureServer URLs in network traffic.",
+    "permissions": [
+      "webRequest",
+      "webRequestBlocking",
+      "*://*/*"
+    ],
+    "browser_action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+      }
+    },
+    "background": {
+      "scripts": ["background.js"]
+    },
+    "icons": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  }
+  

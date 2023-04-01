@@ -1,24 +1,3 @@
-// let detectedUrls = new Set();
-
-// chrome.webRequest.onBeforeRequest.addListener(
-//   (details) => {
-//     if (details.url.includes("FeatureServer") 
-//         || details.url.includes("MapServer")) {
-//       detectedUrls.add(details.url);
-//       chrome.browserAction.setBadgeText({
-//         text: String(detectedUrls.size),
-//       });
-//     }
-//   },
-//   { urls: ["*://*/*"] },
-//   ["blocking"]
-// );
-
-// chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
-//   if (request.type === "getDetectedUrls") {
-//     sendResponse(Array.from(detectedUrls));
-//   }
-// });
 const detectedUrls = new Set();
 
 function stripQueryParameters(url) {
